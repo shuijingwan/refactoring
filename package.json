@@ -5,5 +5,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "chai": "^4.3.7"
+  }
 }
