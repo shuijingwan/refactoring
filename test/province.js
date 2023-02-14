@@ -15,12 +15,15 @@ function sampleProvinceData() {
 }
 
 var expect = chai.expect;
-describe('province', function() {
-    const asia = new Province(sampleProvinceData()); // DON'T DO THIS
-    it('shortfall', function() {
+describe('province', function () {
+    let asia;
+    beforeEach(function () {
+        asia = new Province(sampleProvinceData());
+    });
+    it('shortfall', function () {
         expect(asia.shortfall).equal(5);
     });
-    it('profit', function() {
+    it('profit', function () {
         expect(asia.profit).equal(230);
     });
 });
