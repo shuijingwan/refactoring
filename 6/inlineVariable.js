@@ -1,1 +1,3 @@
-return anOrder.basePrice > 1000;
+function getPrice(anOrder) {
+    return anOrder.basePrice > 1000;
+}
