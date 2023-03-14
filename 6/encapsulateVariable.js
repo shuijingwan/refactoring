@@ -1,9 +1,5 @@
-let defaultOwnerData = {firstName: "Martin", lastName: "Fowler"};
+let defaultOwner = {firstName: "Martin", lastName: "Fowler"};
 
-export function defaultOwner() {
-    return defaultOwnerData;
-}
+defaultOwner = {firstName: "Rebecca", lastName: "Parsons"};
 
-export function setDefaultOwner(arg) {
-    defaultOwnerData = arg;
-}
+spaceship.owner = defaultOwner;
