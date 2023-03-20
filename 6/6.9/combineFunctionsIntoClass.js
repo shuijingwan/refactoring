@@ -1,11 +1,13 @@
-function base(aReading) {
-    //...
-}
+class Reading {
+    base() {
+        //...
+    }
 
-function taxableCharge(aReading) {
-    //...
-}
+    taxableCharge() {
+        //...
+    }
 
-function calculateBaseCharge(aReading) {
-    //...
+    calculateBaseCharge() {
+        //...
+    }
 }
