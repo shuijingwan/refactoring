@@ -1,11 +1,11 @@
-function amountInvoiced(startDate, endDate) {
+function amountInvoiced(aDateRange) {
     //...
 }
 
-function amountReceived(startDate, endDate) {
+function amountReceived(aDateRange) {
     //...
 }
 
-function amountOverdue(startDate, endDate) {
+function amountOverdue(aDateRange) {
     //...
 }
