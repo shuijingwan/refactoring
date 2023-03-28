@@ -1,6 +1,3 @@
-const aReading = acquireReading();
-const basicChargeAmount = calculateBaseCharge(aReading);
-
-function calculateBaseCharge(aReading) {
-    return baseRate(aReading.month, aReading.year) * aReading.quantity;
-}
+const rawReading = acquireReading();
+const aReading = new Reading(rawReading);
+const basicChargeAmount = aReading.calculateBaseCharge;
