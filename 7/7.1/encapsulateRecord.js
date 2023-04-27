@@ -1,9 +1,6 @@
-result += `<h1>${organization.name}</h1>`;
-organization.name = newName;
-
 result += `<h1>${getRawDataOfOrganization().name}</h1>`;
 
-getRawDataOfOrganization().name = newName;
+getOrganization().name = newName;
 
 const organization = new Organization({name: "Acme Gooseberries", country: "GB"});
 
