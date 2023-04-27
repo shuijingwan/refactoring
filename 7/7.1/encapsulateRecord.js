@@ -7,6 +7,10 @@ function getRawDataOfOrganization() {
     return organization;
 }
 
+result += `<h1>${getRawDataOfOrganization().name}</h1>`;
+
+getRawDataOfOrganization().name = newName;
+
 class Organization {
     constructor(data) {
         this._name = data.name;
