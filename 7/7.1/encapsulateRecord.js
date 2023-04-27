@@ -1,4 +1,4 @@
-result += `<h1>${getRawDataOfOrganization().name}</h1>`;
+result += `<h1>${getOrganization().name}</h1>`;
 
 getOrganization().name = newName;
 
@@ -19,5 +19,9 @@ class Organization {
 
     set name(aString) {
         this._data.name = aString;
+    }
+
+    get name() {
+        return this._data.name;
     }
 }
