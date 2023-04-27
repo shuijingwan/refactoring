@@ -3,6 +3,10 @@ organization = {name: "Acme Gooseberries", country: "GB"};
 result += `<h1>${organization.name}</h1>`;
 organization.name = newName;
 
+function getRawDataOfOrganization() {
+    return organization;
+}
+
 class Organization {
     constructor(data) {
         this._name = data.name;
