@@ -51,3 +51,5 @@ class Organization {
 //     name: "neal",
 //         id: "38673",
 // more customers in a similar form
+
+customerData[customerID].usages[year][month] = amount;
