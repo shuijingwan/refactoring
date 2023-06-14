@@ -52,7 +52,7 @@ class Organization {
 //         id: "38673",
 // more customers in a similar form
 
-getRawDataOfCustomers()[customerID].usages[year][month] = amount;
+getCustomerData().setUsage(customerID, year, month, amount);
 
 function compareUsage(customerID, laterYear, month) {
     const later = getRawDataOfCustomers()[customerID].usages[laterYear][month];
@@ -61,7 +61,7 @@ function compareUsage(customerID, laterYear, month) {
 }
 
 function getRawDataOfCustomers() {
-    return customerData._data;
+    return customerData.rawData;
 }
 
 function setRawDataOfCustomers(arg) {
@@ -75,5 +75,13 @@ function getCustomerData() {
 class CustomerData {
     constructor(data) {
         this._data = data;
+    }
+
+    get rawData() {
+        return _.cloneDeep(this._data);
+    }
+
+    setUsage(customerID, year, month, amount) {
+        this._data[customerID].usages[year][month] = amount;
     }
 }
