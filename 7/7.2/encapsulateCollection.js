@@ -9,13 +9,35 @@
 // }
 
 class Person {
+    constructor(name) {
+        this._name = name;
+        this._courses = [];
+    }
+
+    get name() {
+        return this._name;
+    }
+
     get courses() {
-        return this._courses.slice();
+        return this._courses;
     }
 
-    addCourse(aCourse) {
+    set courses(aList) {
+        this._courses = aList;
+    }
+}
+
+class Course {
+    constructor(name, isAdvanced) {
+        this._name = name;
+        this._isAdvanced = isAdvanced;
     }
 
-    removeCourse(aCourse) {
+    get name() {
+        return this._name;
+    }
+
+    get isAdvanced() {
+        return this._isAdvanced;
     }
 }
