@@ -41,3 +41,5 @@ class Course {
         return this._isAdvanced;
     }
 }
+
+numAdvancedCourses = aPerson.courses.filter(c => c.isAdvanced).length;
