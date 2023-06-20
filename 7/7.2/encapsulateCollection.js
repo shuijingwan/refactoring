@@ -46,3 +46,7 @@ numAdvancedCourses = aPerson.courses.filter(c => c.isAdvanced).length;
 
 const basicCourseNames = readBasicCourseNames(filename);
 aPerson.courses = basicCourseNames.map(name => new Course(name, false));
+
+for (const name of readBasicCourseNames(filename)) {
+    aPerson.courses.push(new Course(name, false));
+}
