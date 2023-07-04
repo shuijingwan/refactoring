@@ -9,5 +9,13 @@ class Order {
         this.priority = data.priority;
         // more initialization
     }
+
+    get priority() {
+        return this._priority;
+    }
+
+    set priority(aString) {
+        this._priority = aString;
+    }
 }
 
