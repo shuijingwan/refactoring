@@ -10,7 +10,7 @@ class Order {
         // more initialization
     }
 
-    get priority() {
+    get priorityString() {
         return this._priority.toString();
     }
 
