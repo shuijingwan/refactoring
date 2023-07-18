@@ -2,7 +2,7 @@
 
 orders.filter(o => o.priority.higherThan(new Priority("normal")))
 
-highPriorityCount = orders.filter(o => "high" === o.priority || "rush" === o.priority).length;
+highPriorityCount = orders.filter(o => "high" === o.priority.toString() || "rush" === o.priority.toString()).length;
 
 class Order {
     constructor(data) {
